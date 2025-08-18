@@ -1,0 +1,43 @@
+/* 1. Reset CSS e Estilos Globais*/
+:root {
+    --cor-fundo: #f0f2f5;
+    --cor-branco: #ffffff;
+    --cor-texto-primario: #1c1e21;
+    --cor-texto-secundario: #606770;
+    --cor-borda: #dcdfe3;
+    --cor-acento: #007bff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+bady{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    /* cemtralizando o componente na página para visualização*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* 2. estilos do componente principal: card*/
+.card {
+    background-color: var(--cor-branco);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    /* Aqui que começa a mágica da transformação*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+    /* 3. Efeito de hover no card*/
+    .card:hover{
+    transform: translateY(.10PX); /* Movimenta o card para cima em 10px*/
+    box-shadow: 0 12px 31px rgba(0, 0, 0, 0.2);
+    }
+
